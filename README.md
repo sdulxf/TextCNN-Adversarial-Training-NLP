@@ -66,7 +66,7 @@ python main.py
 python main.py --AtModel=PGD --epsilon=0.0313 --alpha=0.0627 --K=5
 
 # TextCNN + Free
-python main.py --AtModel=Free --epsilon=0.1 --M=8
+python main.py --AtModel=Free --epsilon=0.0313 --M=5
 
 # TextCNN + FGSM
 python main.py --AtModel=FGSM --epsilon=0.0313 --alpha=0.0627
@@ -79,7 +79,7 @@ python main.py --AtModel=FGSM --epsilon=0.0313 --alpha=0.0627
 | ------------ | ---------------------------------------------- | ------ | -------- | ------ | ------ | --------- | ----- |
 | TextCNN      | early_stop                                     | 90.24% | 90.27%   | 90.24% | 90.22% | 4.3       | 3     |
 | TextCNN+PGD  | early_stop,epsilon=8/255,     alpha=16/255,K=5 | 90.91% | 90.96%   | 90.91% | 90.91% | 28        | 3     |
-| TextCNN+Free | early_stop,epsilon=0.1,     M=7                | 88.44% | 88.54%   | 88.44% | 88.46% | 30.95     | 2     |
+| TextCNN+Free | early_stop,epsilon=8/255,     M=5              | 89.74% | 89.80%   | 89.74% | 89.74% | 28.94     | 2     |
 | TextCNN+FGSM | early_stop,epsilon=8/255,     alpha=16/255     | 91.16% | 91.16%   | 91.16% | 91.15% | 12.3      | 4     |
 
 ## 参考
